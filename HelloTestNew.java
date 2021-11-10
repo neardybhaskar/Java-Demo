@@ -9,6 +9,7 @@ public class HelloTestNew {
 
     public static void main(String[] args) {
         System.out.println("Hello World");
+		System.out.println("Working Directory = "+ System.getProperty("user.dir"));
 		try {
             Runtime.getRuntime().exec("export HelloTest = " +testVariable);
         } catch (IOException e) {
